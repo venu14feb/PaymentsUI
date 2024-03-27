@@ -5,7 +5,7 @@ import Menu from './components/Menu';
 import Footer from './components/Footer';
 import Greeting from './components/Greeting';
 import SongList from './components/SongList';
-import SearchOrder from './components/SearchOrder';
+import SearchOrder from './components/Search';
 
 function App() {
   return (

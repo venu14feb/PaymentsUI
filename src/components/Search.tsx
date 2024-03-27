@@ -1,4 +1,4 @@
-import FilterOrder from "./FilterOrder"
+import FilterOrder from "./Transactions"
 type dataRow = {
     id: number,
     date: Date,
@@ -12,19 +12,17 @@ const data:dataRow[] =
         {id:1, date:new Date(), country: 'USA', currency: 'USD', amount: 10},
         {id:2, date:new Date(), country: 'AUS', currency: 'ASD', amount: 20},
         {id:3, date:new Date(), country: 'IND', currency: 'INR', amount: 50},
-        {id:3, date:new Date(), country: 'IND', currency: 'INR', amount: 50}
+        {id:4, date:new Date(), country: 'SIN', currency: 'SGD', amount: 80}
     ]
 
 type orderDetails = {
     orderId: number
 }
 
-const SearchOrder = (order:orderDetails):JSX.Element => {
-    let orders:JSX.Element[] = [];
 
-    data.forEach((row:dataRow) => {
-        orders.push(<FilterOrder id={row.id} date={row.date} country={row.country} currency={row.currency} amount= {row.amount}/>);
-    });
+const SearchOrder = (order:orderDetails):JSX.Element => {
+    let orders:JSX.Element[] = data.map((row, index)=><FilterOrder key={index} id={row.id} date={row.date} country={row.country} currency={row.currency} amount= {row.amount}/>);
+
     return (
         <div>
             <p>
