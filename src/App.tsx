@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Menu from './components/Menu';
+import Menu from './components/PaymentsUI/Menu';
 import Footer from './components/Footer';
 import Greeting from './components/Greeting';
 import SongList from './components/SongList';
-import SearchOrder from './components/Search';
+import SearchOrder from './components/PaymentsUI/Search';
 
 function App() {
   return (
