@@ -1,6 +1,6 @@
 const tab = {
     display: 'inline-block',
-    marginLeft: '500px'
+    marginLeft: '240px'
 }
 
 const Menu = () : JSX.Element => {

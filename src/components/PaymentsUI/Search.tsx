@@ -29,8 +29,20 @@ const SearchOrder = (order:orderDetails):JSX.Element => {
                 <span>Order Id:</span>
                 <span><input type="text"></input></span>
                 <span><button>Search</button></span>
+                <br></br>
+                <br></br>
+
+                <label>
+                    Select Country
+                    <select>
+                        <option>USD</option>
+                        <option>FRA</option>
+                        <option>INR</option>
+                    </select>
+                </label>
+  
                 <div>
-                <table>
+                <table className="center">
                     <tr>
                         <th>Id</th> 
                         <th>Date</th>

@@ -33,6 +33,12 @@ table, th, td {
   border-collapse: collapse;
 }
 
+.center{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
